@@ -1,6 +1,6 @@
 (function ($) {
     // Instantiate MixItUp:
-    $('#Container').mixItUp();
+    $('#menu_list').mixItUp();
 })(jQuery);
 
 function myMap() {

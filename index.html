@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aldo's Meal Preps</title>    
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Nunito:200">
@@ -10,289 +10,264 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
-    <nav class="navbar navbar-default">
+ 
+<!-----NAVIGATION----->
+ 
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<!-----BANNER----->
+   
+  <section id="banner">
+    <div class="bg-color">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="nav_links" class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#event">Events</a></li>
-            <li><a href="#menu-list">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="row">
+        <div class="inner text-center">
+          <h1>Aldo's Meal Preps</h1>
+          <h2>Food To fit your lifestyle &amp; health.</h2>
+          <p>Made to order and on the go!!</p>
         </div>
       </div>
-    </nav>
-    <!--banner-->
-    <section id="banner">
-      <div class="bg-color">
-        <div class="container">
-        <div class="row">
-          <div class="inner text-center">
-            <h1 class="logo-name">Aldo's Meal Preps</h1>
-            <h2>Food To fit your lifestyle &amp; health.</h2>
-            <p>Made to order and on the go!!</p>
+      </div>
+    </div>
+  </section>
+    
+<!-----ABOUT----->
+   
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1>Aldo's Meal Preps</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div>
+              <h2>vel illum qui dolorem eum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!</p>
+              <div class="details-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li><i class="fa fa-check"></i>Quisque finibus eu lorem quis elementum</li>
+                  <li><i class="fa fa-check"></i>Vivamus accumsan porttitor justo sed </li>
+                  <li><i class="fa fa-check"></i>Curabitur at massa id tortor fermentum luctus</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="img/IMG_0029.jpg" alt="" class="img-responsive">
           </div>
         </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+
+<!-----MENU----->
+   
+  <section id="menu" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1>Menu List</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+        </div>
+        <div class="col-md-12  text-center gallery-trigger">
+          <ul>
+            <li><a class="filter" data-filter="all">Show All</a></li>
+            <li><a class="filter" data-filter=".category-1">Small Plates</a></li>
+            <li><a class="filter" data-filter=".category-2">Mains</a></li>
+            <li><a class="filter" data-filter=".category-3">Sides</a></li>
+          </ul>
+        </div>
+        <div id="menu_list">
+          <div class="mix category-1 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$5.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-1 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$5.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-1 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$5.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-1 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$5.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-2 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$12.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-2 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$12.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-2 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$12.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-2 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$12.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-3 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$2.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-3 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$2.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-3 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$2.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="mix category-3 menu-restaurant" data-myorder="2">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$2.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- / banner -->
-    <!--about-->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center marb-35">
-                    <h1 class="header-h">Aldo's Meal Preps</h1>
-                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="about-info">
-                            <h2 class="heading">vel illum qui dolorem eum</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!</p>
-                            <div class="details-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                                    <li><i class="fa fa-check"></i>Quisque finibus eu lorem quis elementum</li>
-                                    <li><i class="fa fa-check"></i>Vivamus accumsan porttitor justo sed </li>
-                                    <li><i class="fa fa-check"></i>Curabitur at massa id tortor fermentum luctus</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/IMG_0029.jpg" alt="" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
+    </div>
+  </section>
+
+<!-----CONTACT----->
+
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1>Contact</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+          <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
         </div>
-    </section>
-    <!--/about-->
-    <!-- event -->
-    <section id="event">
-        <div class="bg-color" class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center" style="padding:60px;">
-                        <h1 class="header-h">Up Coming events</h1>
-                        <p class="header-p">Decorations 100% complete here</p>
-                    </div>
-                    <div class="col-md-12" style="padding-bottom:60px;">
-                        <div class="item active left">
-                            <div class="col-md-6 col-sm-6 left-images">
-                                <img src="img/IMG_0107.jpg" class="img-responsive">
-                            </div>
-                            <div class="col-md-6 col-sm-6 details-text">
-                                <div class="content-holder">
-                                    <h2>Joyful party</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
-                                    <address>
-                                        <strong>Place: </strong>1612 Collins Str, Victoria 8007<br><strong>Time: </strong>07:30pm
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-sm-5">
+          <div class="info">
+            <div class="info_left">
+                <div class="bg-phone text-center"><span class="phone-in-talk fa fa-phone"></span></div>
             </div>
+            <div class="info_body">
+              <h4>Phone Number</h4>
+              <p>510.555.5555</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info_left">
+              <div class="bg-hour text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+            </div>
+            <div class="info_body">
+              <h4>Opening Hours</h4>
+              <p>Monday to Friday 09.00 - 24:00</p>
+              <p>Friday and Sunday 08:00 - 03.00</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <!--/ event -->
-    <!-- menu -->
-    <section id="menu-list" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center marb-35">
-                    <h1 class="header-h">Menu List</h1>
-                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                </div>
-                <div class="col-md-12  text-center gallery-trigger">
-                    <ul>
-                        <li><a class="filter" data-filter="all">Show All</a></li>
-                        <li><a class="filter" data-filter=".category-1">Small Plates</a></li>
-                        <li><a class="filter" data-filter=".category-2">Mains</a></li>
-                        <li><a class="filter" data-filter=".category-3">Sides</a></li>
-                    </ul>
-                </div>
-                <div id="Container">
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$5.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$5.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$5.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$5.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$12.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$12.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$12.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$12.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$2.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$2.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$2.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$2.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-offset-1 col-sm-offset-1 col-md-6 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.6339157195293!2d-122.43970568471033!3d37.77518121990919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580afc5ffa2f5%3A0x2d6706b90add943!2s600+Divisadero+St%2C+San+Francisco%2C+CA+94117!5e0!3m2!1sen!2sus!4v1487570597943" width="100%" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-    </section>
-    <!--/ menu -->
-    <!-- contact -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 class="header-h">Contact</h1>
-                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                </div>
+      </div>
+    </div>
+  </section>
+
+<!-----FOOTER----->
+      
+  <footer id="footer" class="text-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="footer_info">
+            <h4>Aldo's Meal Preps</h4>
+            <address>555 Fremont Ln<br>Fremont, CA 000000</address>
+            <div class="social-list">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
-            <div class="row msg-row">
-                <div class="col-md-4 col-sm-4 mr-15">
-                    <div class="media-2">
-                        <div class="media-left">
-                            <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="dark-blue regular">Phone Number</h4>
-                            <p class="light-blue regular alt-p">510.555.5555</p>
-                        </div>
-                    </div>
-                    <div class="media-2">
-                        <div class="media-left">
-                            <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="dark-blue regular">Opening Hours</h4>
-                            <p class="light-blue regular alt-p"> Monday to Friday 09.00 - 24:00</p>
-                            <p class="light-blue regular alt-p">
-                                 Friday and Sunday 08:00 - 03.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-offset-1 col-md-6 col-sm-6 mr-15">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.6339157195293!2d-122.43970568471033!3d37.77518121990919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580afc5ffa2f5%3A0x2d6706b90add943!2s600+Divisadero+St%2C+San+Francisco%2C+CA+94117!5e0!3m2!1sen!2sus!4v1487570597943" width="100%" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+            <div class="credits">
+                <p>Designed by <a href="http://brandonsco.de"> brandons<span>CO.DE</span><br></a></p>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- / contact -->
-    <!-- footer -->
-    <footer class="footer text-center">
-        <div class="footer-top container-fluid">
-            <div class="row">
-                <div class="col-md-offset-3 col-md-6 text-center">
-                    <div class="widget">
-                        <h4 class="widget-title">Aldo's Meal Preps</h4>
-                        <address>555 Fremont Ln<br>Fremont, CA 000000</address>
-                        <div class="social-list">
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="credits">
-                            Designed by <a href="http://brandonsco.de"> brandons<span>CO.DE</span><br></a>
-                            <p>Built on Delicious Theme @ <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a><br><p>
-                        </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- / footer -->
-    
+      </div>
+    </div>
+  </footer>
+
+<!-----SCRIPT----->
+            
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
