@@ -1,14 +1,24 @@
-(function ($) {
-    // Instantiate MixItUp:
-    $('#menu_list').mixItUp();
-})(jQuery);
+$(document).ready(function() {
+  "use strict";
+  
+// SCROLL REVEAL ANIMATION
+  window.sr = ScrollReveal();
+    sr.reveal('.sr_checks', {
+      duration: 1000,
+      delay: 500,
+      distance: '0px',
+      scale: 0.2
+    }, 200);
+    sr.reveal('.sr_button', {
+      duration: 1000,
+    });
+    sr.reveal('.sr_contact', {
+      duration: 1500,
+      origin: 'left'
+    });
 
-function myMap() {
-  var myCenter = new google.maps.LatLng(37.7751812,-122.4397057);
-  var mapCanvas = document.getElementById("googleMap");
-  var mapOptions = {center: myCenter, zoom: 16};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
+// MIXITUP MENU ANIMATION
+    $('#menu_list').mixItUp();
+  
+})(jQuery);
 

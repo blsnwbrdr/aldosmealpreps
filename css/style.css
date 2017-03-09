@@ -9,19 +9,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-/*
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-*/
 a:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -37,16 +24,24 @@ a:hover {
 .marb-35{
   margin-bottom: 35px;
 }
+.fadeInLeft {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
 
 /*=====NAVIGATION=====*/
 
-.navbar {
+#navbar {
   margin-bottom: 0;
   border: 0;
-  background-color: #FFFFFF;
-}
-#navbar {
+  background-color: #FFFFFF;  
   font-size: 18px;
+}
+#navbar .navbar-header i {
+  font-size: 16px;
+}
+#navbar .navbar-toggle:focus, #navbar .navbar-toggle:hover {
+  background-color: #F0F0F0;
 }
 #navbar li a {
   color: #9699A6;
@@ -169,6 +164,24 @@ a:hover {
   position: relative;
   display: block;
 }
+#menu .margin_top {
+  margin-top: 25px;
+}
+#menu .order {
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #78C2E2;
+  color: #FFFFFF;
+  border: 1px solid #78C2E2;  
+}
+#menu .order:hover {
+  background-color: transparent;
+  color: #9699A6;
+  border: 1px solid #9699A6;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;  
+}
 
 /*=====CONTACT=====*/
 
@@ -206,6 +219,29 @@ a:hover {
   line-height: 70px;
   color: rgb(255, 255, 255);
 }
+#contact input, #contact textarea {
+  padding: 5px;
+  margin: 2px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(229,229,229,0.50);
+  width: 80%;
+}
+#contact button {
+  padding: 0 10px;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid #9699A6;
+}
+#contact button:hover {
+  background-color: #78C2E2;
+  color: #FFFFFF;
+  border: 1px solid #78C2E2;
+  border-radius: 2px;  
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
 
 /*=====FOOTER=====*/
 
@@ -226,7 +262,7 @@ a:hover {
   padding-bottom: 20px;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 36px;
-  color: #78c2e2;
+  color: #78C2E2;
 }
 #footer .footer_info, #footer address {
   color: #999999;
@@ -248,6 +284,11 @@ a:hover {
 
 /*=====MEDIA=====*/
 
+@media only screen and (max-device-width: 1080px) {
+  #banner {
+    background-attachment: scroll;
+  }
+}
 @media (min-width: 451px) and (max-width: 767px) {
   #navbar li a {
     border-top: 0;
